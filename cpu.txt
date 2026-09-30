@@ -1,0 +1,10 @@
+echo &quot;CPU Load:&quot;
+uptime
+echo &quot;Memory Usage:&quot;
+free -h
+echo &quot;Disk Usage:&quot;
+df -h
+echo &quot;Network Status:&quot;
+ip a | grep inet
+echo &quot;Top Processes:&quot;
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head
